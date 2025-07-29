@@ -19,7 +19,7 @@ export default function Header ({dark,setDark}:HeaderProps){
     return (
         <div className={`h-[50px] flex items-center justify-between px-4 relative ${dark ? "bg-zinc-800" : "bg-zinc-500"}`}>
                 <Switch onClick={changeDark} className="z-1"/>
-                <h1 className={`  w-[100%]  absolute text-center ${dark ? "text-blue-500" : "text-zinc-800"}`}>Happy Fun Time</h1>
+                <h1 className={`  w-[100%]  absolute text-center ${dark ? "text-blue-500" : "text-zinc-800"}`}></h1>
                 <DropdownMenu>
                     <DropdownMenuTrigger ><Button variant="outline" className="bg-red-500 z-1 relative">Dropdown</Button></DropdownMenuTrigger>
                     <DropdownMenuContent>

@@ -17,9 +17,9 @@ type ContentProps = {
 export default function Content ({dark}:ContentProps){
      
     return (
-        <div className={`flex-1 flex items-center justify-center ${dark ? "bg-zinc-500 text-white" : "bg-zinc-300 text-black"}`}>
+        <div className={`flex-1 flex p-[20px] items-center justify-center ${dark ? "bg-zinc-500 text-white" : "bg-zinc-300 text-black"}`}>
 
-            <div className="w-[40%] border-5 bg-zinc-900 border-blue-500 rounded-md flex items-center justify-center">
+            <div className="w-[40%] p-[20px] border-5 bg-zinc-900 border-blue-500 rounded-md flex items-center justify-center">
                  <Carousel className="w-full max-w-xs">
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
